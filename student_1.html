@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+     var name, dob, mobile, email, address, Course, Appear, last, pass, conform;
+
+
+     function a() 
+        {
+            name = document.getElementById("name").value
+            dob = document.getElementById("dob").value
+            mobile = document.getElementById("mn").value
+            email = document.getElementById("e").value
+            address = document.getElementById("add").value
+            course = document.getElementById("co").value
+            Appear = document.getElementById("ay").value
+            last = document.getElementById("l").value
+            passward = document.getElementById("p").value
+            conform = document.getElementById("cp").value
+
+            if (name == "") 
+            {
+                alert("plz Enter Your Name");
+                document.getElementById("name").focus()
+                document.getElementById("name").style.borderColor="red"
+                                                               
+            }
+           
+            else if (dob == "") 
+            {
+                alert("select date");
+                document.getElementById("dob").focus()
+                document.getElementById("dob").style.borderColor = "red";
+            }
+            
+            else if (mobile == "" ) 
+            {
+                alert("Enter Mobile Number");
+                document.getElementById("mn").focus()
+                document.getElementById("mn").style.borderColor = "red";
+            }
+            else if (email == "") 
+            {
+                alert("Enter Email");
+                document.getElementById("e").focus()
+                document.getElementById("e").style.borderColor = "red";
+            }
+           
+            else if (address == "") 
+            {
+                alert("Enter Address");
+                document.getElementById("add").focus()
+                document.getElementById("add").style.borderColor = "red";
+            }
+                                       
+           else if (course == "") 
+            {
+                alert("Enter Your course");
+                document.getElementById("co").focus()
+                document.getElementById("co").style.borderColor = "red";
+            }
+                        
+            else if (Appear == 0) 
+            {
+                alert("Enter Appear Year");
+                document.getElementById("ay").focus()
+                document.getElementById("ay").style.borderColor = "red";
+            }
+                       
+            else if (last == "") 
+            {
+                alert("Enter last seam");
+                document.getElementById("l").focus()
+                document.getElementById("l").style.borderColor = "red";
+            }
+            else if (passward == "") 
+            {
+                alert("Enter New Passward");
+                document.getElementById("p").focus()
+                document.getElementById("p").style.borderColor = "red";
+
+            }
+
+            else if (conform == "") 
+            {
+                alert("Conform Your Passward");
+                document.getElementById("cp").focus()
+                document.getElementById("cp").style.borderColor = "red";
+                
+            }
+             
+             if (passward != conform)
+            {
+                alert("Passward does not match");
+
+            }
+
+            if (name != "")
+            {
+                document.getElementById("name").value
+                document.getElementById("name").style.borderColor="black"
+                
+            }
+
+            if (dob != "")
+            {
+                document.getElementById("dob").style.borderColor = "black";
+            }
+
+            if (mobile != "")
+            {
+                  document.getElementById("mn").style.borderColor = "black";
+            }
+           
+            // else if(mobile > '0' && mobile >= '9')
+            // {
+            //    document.getElementById("mob").value 
+            // }
+
+            if (email != "")
+            {
+                document.getElementById("e").style.borderColor = "black";
+            }
+
+            if (address != "")
+            {
+                document.getElementById("add").style.borderColor = "black";
+            }
+
+            if (course != "")
+            {
+                document.getElementById("co").style.borderColor = "black";
+            }
+
+            if (last != "")
+            {
+                document.getElementById("l").style.borderColor = "black";
+            }
+
+            if (passward != "")
+            {
+                document.getElementById("p").style.borderColor = "black";
+            }
+
+            if (conform != "")
+            {
+                document.getElementById("cp").style.borderColor = "black";
+            }
+
+
+
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label for="" >Full Name</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="name" onchange="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">DOB</label>
+                </td>
+                <td> <input type="date" name="" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Mobili Number</label>
+                </td>
+                <td> <input type="text" name="" id="mn">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email Id</label>
+                </td>
+                <td> <input type="email" name="" id="e">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Address</label>
+                </td>
+                <td> <textarea name="" id="add" cols="20" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Course</label>
+                </td>
+                <td> <input type="text" name="" id="co">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Appear Year</label>
+                </td>
+                <td> <select name="" id="ay">
+                        <option value="">select</option>
+                        <option value="1">2020</option>
+                        <option value="2">2021</option>
+                        <option value="3">2022</option>
+                       
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Last Seam Mark In %</label>
+                </td>
+                <td> <input type="text" name="" id="l">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Passward</label>
+                </td>
+                <td> <input type="text" name="" id="p">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Conform Passward</label>
+                </td>
+                <td> <input type="text" name="" id="cp">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" onclick="a()">Submit</button>
+                    <button type="button">Reset</button>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

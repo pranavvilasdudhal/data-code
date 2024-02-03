@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <h1 style="background-color: red;"> -->
+        <script>
+            function oddeven() {
+
+                var a = parseInt(document.getElementById("a").value)
+                
+                for (var i = 0 ; i < a; i++) {
+                    if (i % 2 == 0) {
+
+                      
+                       
+                        myElement.style.fon = "green";
+                        console.log(i+"green")
+                       
+                    }
+                    if(i % 2 != 0) {
+                       
+                        myElement2.style.color = "red";
+                        console.log(i+"red")
+                    }
+                    if(i % 2 != 0) {
+                       
+                        myElement3.style.color = "blue";
+                        console.log(i+"blue")
+                    }
+                }
+            }
+        </script>
+    <!-- </h1> -->
+</head>
+
+<body>
+    Enter the value : <input type="text" name="" id="a"><br><br>
+    <input type="button" value="submit" onclick="oddeven()">
+    <p style="color: rgb(17, 255, 0);" id="myElement">This is a paragraph.</p>
+    <p style="color: rgb(255, 0, 0);" id="myElement2">This is a paragraph.</p>
+    <p style="color: rgb(21, 0, 255);" id="myElement3">This is a paragraph.</p>
+
+</body>
+
+</html>

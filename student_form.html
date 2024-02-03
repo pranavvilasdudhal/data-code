@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function data(){
+        var name=document.getElementById("name").value
+        var date=document.getElementById("date").value
+        var number=document.getElementById("number").value
+        var email=document.getElementById("email").value
+        var addres=document.getElementById("addres").value
+
+        var year=document.getElementById("year").value
+        // var y1=document.getElementById("y1").value
+        // var y2=document.getElementById("y2").value
+        // var y3=document.getElementById("y3").value
+
+        var marks=document.getElementById("marks").value
+        var password=document.getElementById("password").value
+        var confirm=document.getElementById("confirm").value
+        
+
+        if(name==""){
+            alert("plz enter the name")
+            document.getElementById("name").style.backgroundColor = "red";
+         //   document.getElementById("name").style.backgroundColor = "green";
+        }
+
+         if(date==""){
+            alert("plz enter the date")
+            document.getElementById("date").focus()
+            document.getElementById("date").style.backgroundColor = "red";
+        }
+
+         if(number==""){
+            alert("plz enter the number")
+            document.getElementById("number").focus()
+            document.getElementById("number").style.backgroundColor = "red";
+        }
+
+         if(email==""){
+            alert("plz enter the email")
+            document.getElementById("email").focus()
+            document.getElementById("email").style.backgroundColor = "red";
+        }
+        
+
+         if(addres==""){
+            alert("plz enter the addres")
+            document.getElementById("addres").focus()
+            document.getElementById("addres").style.backgroundColor = "red";
+        }
+        if(year==""){
+            alert("plz enter the Appear year") 
+            document.getElementById("year").focus()
+             document.getElementById("year").style.backgroundColor = "red";
+        }
+        
+       if(marks==""){
+            alert("plz enter the marks")
+            document.getElementById("marks").style.backgroundColor = "red";
+        }
+
+       if(password==""){
+            alert("plz enter the password")
+            document.getElementById("password").focus()
+            document.getElementById("password").style.backgroundColor = "red";
+        }
+
+        if(confirm==""){
+            alert("plz enter the confirm")
+            document.getElementById("confirm").focus()
+            document.getElementById("confirm").style.backgroundColor = "red";
+        }
+
+        if (passward != confirm)
+            {
+                alert("Passward does not match");
+
+            }
+
+            if (me != "")
+            {
+                document.getElementById("me").value
+                document.getElementById("me").focus()
+                document.getElementById("me").style.borderColor="black"
+                
+            }
+
+        else{
+            alert("correct form")
+        }
+        
+    }
+
+</script>
+<body>
+    <table>
+        <tr>
+            <td>name</td>
+            <td><input type="text"name="name"id="name"></td>
+        </tr>
+
+         <tr>
+            <td>DOB:-</td>
+            <td><input type="date" name="DOB" id="date"></td>
+        </tr>
+
+        <tr> <td>mobile number:-</td>
+            <td><input type="text"name=""id="number"></td>
+        </tr>
+
+        <tr>
+            <td>email id:-</td>
+            <td><input type="text"name=""id="email"></td>
+        </tr>
+
+        <tr>
+            <td>addres:-</td>
+            <td><textarea name="" id="addres" cols="25" rows="2"></textarea> </td>
+        </tr>
+
+        <tr >
+          <td>Appear year</td>
+          <td><select name="" id="year">
+            
+            <option value="">select</option>
+            <option value="2023"></option>
+            <option value="2024"></option>
+            <option value="2025"></option>
+          </select></td>
+        </tr>
+
+        <tr>
+            <td>last sem marks in %:-</td>
+            <td><input type="text"name="name"id="marks"></td>
+        </tr>
+
+        <tr>
+            <td>password:-</td>
+            <td><input type="password" name="password" id="password"></td>
+        </tr>
+
+        <tr>
+            <td>confirm password:-</td>
+            <td><input type="password" name="confirm" id="confirm"></td>
+        </tr>
+
+        
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="data()">Submit</button>
+                <button type="button" onclick="">Reset</button>
+
+            </td>
+        </tr>
+        
+        
+    </table>
+</body>
+</html>

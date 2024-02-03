@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function red(){
+     document.getElementById("box").style.backgroundColor = "red"
+    }
+
+    function blue(){
+     document.getElementById("box").style.backgroundColor = "blue"
+    }
+
+    function green(){
+     document.getElementById("box").style.backgroundColor = "green"
+    }
+
+</script>
+<body>
+  
+<table> 
+
+     <textarea name="" id="box" cols="20" rows="5"></textarea>
+     <tr> 
+        <td>
+    <input style="background-color: red;" type="button" value="submit" onclick="red()">
+       </td>
+       <td>
+    <input style="background-color: blue;" type="button" value="submit" onclick="blue()">
+    </td>
+    <td>
+    <input style="background-color: green;" type="button" value="submit" onclick="green()">
+    </td>
+    </tr>
+</table>
+</body>
+</html>

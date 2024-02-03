@@ -1,0 +1,138 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+    function quasion1(){
+       document.getElementById("a").style.color="blue"
+       document.getElementById("b").style.color="red"
+       document.getElementById("c").style.color="red"
+       document.getElementById("d").style.color="red"
+
+       
+    }
+        function quasion2(){
+       document.getElementById("a1").style.color="red"
+       document.getElementById("b2").style.color="red"
+       document.getElementById("c3").style.color="blue"
+       document.getElementById("d4").style.color="red"
+    }
+    function quasion3 (){
+       document.getElementById("aa").style.color="green"
+       document.getElementById("bb").style.color="red"
+       document.getElementById("cc").style.color="red"
+       document.getElementById("dd").style.color="red"
+    }
+       document.getElementById("a").style.color="red"
+       document.getElementById("b").style.color="red"
+       document.getElementById("c").style.color="green"
+       document.getElementById("d").style.color="red"
+        
+</script>
+
+<body> 
+  <label>
+    Q1.What does the abbreviation HTML stand for?<br>
+</label>
+    <p id="a"><input type="radio" name="quasion"> phyper text markup language</p>
+    <p id="b"> <input type="radio" name="quasion"> hyper markup language </p>
+    <p id="c"><input type="radio" name="quasion"> language hyper markup </p>
+    <p id="d"><input type="radio" name="quasion"> hyper text markup </p> <br>
+ 
+     <input type="button" value="submit" onclick="quasion1()">  
+
+    
+      Q2.Which of the following tag is used to insert a line-break in HTML?<br><br>
+   <p id="a1"><input type="radio" name="quasion1">per</p>
+   <p  id="b2"><input type="radio" name="quasion1">a</p>
+   <p id="c3"><input type="radio" name="quasion1">br</p> 
+   <p id="d4"><input type="radio" name="quasion1">b</p><br>
+    
+     Q3.Which character is used to represent the closing of a tag in HTML?<br><br>
+    <input type="radio" name="quasion3" id="aa"> \ <br>
+    <input type="radio" name="quasion3" id="bb"> !<br>
+    <input type="radio" name="quasion3" id="cc"> / <br>
+    <input type="radio" name="quasion3" id="dd">..<br><br>
+    
+    Q4.CSS stands for -<br><br>
+    <input type="radio" name="quasion4" id="aaa">Cascade style sheets <br>
+    <input type="radio" name="quasion4" id="bbb"> Color and style sheets <br>
+    <input type="radio" name="quasion4" id="ccc">Cascading style sheets <br>
+    <input type="radio" name="quasion4" id="ddd"> None of the above <br>
+
+    <input type="button" value="submit" onclick="quasion1(),quasion2() ">
+     
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+  <h3> Q1.What does the abbreviation HTML stand for?</h3>
+
+  <input type="radio" name="ans1" ><label for="" id="c">phyper text markup language</label> <br> 
+  <input type="radio" name="ans1" ><label for="" class="test"> hyper markup language</label><br>
+  <input type="radio" name="ans1" ><label for="" class="test">language hyper markup</label><br>
+  <input type="radio" name="ans1" ><label for="" class="test">hyper text markup</label><br>
+  <br>
+  <h3>que 2-1?</h3>
+  ans:
+  <input type="radio" name="ans2" ><label for="" class="test" >2</label>  
+  <input type="radio" name="ans2" ><label for="" id="c" >1</label> 
+  <input type="radio" name="ans2" ><label for="" class="test">4</label>
+  <input type="radio" name="ans2"> <label for="" class="test">5</label>
+  <br>
+  <h3>que 2-1?</h3>
+  ans:
+  <input type="radio" name="ans3" ><label for="" class="test" >2</label>  
+  <input type="radio" name="ans3" ><label for="" id="c" >1</label> 
+  <input type="radio" name="ans3" ><label for="" class="test">4</label>
+  <input type="radio" name="ans3"> <label for="" class="test">5</label>
+  <br>
+  <h3>que 2-1?</h3>
+  ans:
+  <input type="radio" name="ans4" ><label for="" class="test" >2</label>  
+  <input type="radio" name="ans4" ><label for="" id="c" >1</label> 
+  <input type="radio" name="ans4" ><label for="" class="test">4</label>
+  <input type="radio" name="ans4"> <label for="" class="test">5</label>
+  <br>
+  <button onclick="checkque()">submit</button> 
+
+
+
+
+  <script>
+    function checkque()
+    {
+      var matches=document.getElementsByClassName("test")
+      if(document.getElementsByClassName("ans1").checked)
+      { 
+        alert("correct answer");
+        for(var elem in matches)
+        { 
+            matches[elem].style.color="black";
+        }
+
+      }
+      else{ 
+        document.getElementById("c").style.color="green";
+        for(var elem in matches)
+        { 
+            matches[elem].style.color="red"
+        }
+      }
+    }
+</script>
+</body>
+</html>
